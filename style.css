@@ -1,0 +1,55 @@
+body {
+    background-color:rgb(129, 90, 40);
+  }
+  
+  #game_grid {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(214, 194, 194);
+    border-radius: 10px;
+    border-color: rgb(245, 106, 106);
+  }
+  
+  
+  .card {
+    width: 25%;
+    height: 150px;
+    position: relative;
+    transition: transform 1s;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    border-radius: 4px;
+    background-color: rgb(150, 167, 110);
+  }
+  
+  .card :hover {
+    background-color: rgb(167, 92, 175);
+  }
+  
+  
+  img {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .front_face,
+  .back_face {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .front_face {
+    transform: rotateY(180deg);
+  }
